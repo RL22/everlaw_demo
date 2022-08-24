@@ -5,7 +5,8 @@ module.exports = {
     author: 'https://PlanFlow.dev',
     company: 'Your Company Name Here',
   },
-  plugins: [
+  plugins: 
+  [
     'gatsby-plugin-postcss',
     'gatsby-plugin-root-import',
     'gatsby-plugin-react-helmet',
@@ -40,5 +41,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
-  ],
+    
+  ]
+  
 };
+
+TM_API_KEY = "https://app.ticketmaster.com/discovery/v2/events.json?apikey=1l25fWxJ6z8TB1JOAxtfprxgO9ZP7B2F&classificationId=KnvZfZ7vAe1&dmaId=382";
+
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})

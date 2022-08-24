@@ -4,6 +4,7 @@
   "version": "0.1.5",
   "author": "Tapha @ PlanFlow.dev <tapha@planflow.com>",
   "dependencies": {
+    "axios": "^0.27.2",
     "gatsby": "^2.21.37",
     "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.4.4",
