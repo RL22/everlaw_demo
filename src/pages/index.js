@@ -28,28 +28,7 @@ const IndexPage = () => {
     <SEO title="Home" />
 
     <div className="max-w-6xl p-2 mt-4 sm:m-auto sm:p-12">
-      <div className="flex flex-col pb-10 border-b-2 md:flex-row">
-        <div className="flex flex-col justify-center max-w-md md:w-1/2">
-          <div className="text-2xl font-black uppercase md:text-5xl text-primary">
-          <p>{name}</p>
-            <Link
-              to="/our-story"
-              className="w-48 px-4 py-2 text-lg font-medium text-center text-yellow-100 rounded shadow-md cursor-pointer hover:no-underline bg-orange hover:bg-orange-dark"
-            >
-              See all events
-             </Link>
-          </div>
-        </div>
-        {/* Hero Section */}
-        <div className="flex w-full -mt-5 md:justify-end md:w-1/2">
-          <div className="bg-dots">
-            <div className="z-10 max-w-md mt-6 ml-4 rounded-full shadow-2xl">
-              
-              
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Our Products Section */}
       <div className="container pt-2 pb-6 mx-auto mt-2 border-b-4 sm:block">
@@ -63,19 +42,19 @@ const IndexPage = () => {
             <img
               className="w-full"
               src={event.images[5].url}
-              alt={name}
+              alt={event.name}
             ></img>
             <div className="px-6 py-4">
               <div className="mb-2 text-xl font-bold">
-                {name}
+                {event.name}
               </div>
               <p className="mb-4 text-base text-gray-600">
                 {event.info}
               </p>
             </div>
-            <button className="flex px-4 py-2 mb-3 ml-6 text-sm font-bold text-white rounded shadow-sm sm:text-base bg-orange hover:bg-orange-dark">
+            {/* <button className="flex px-4 py-2 mb-3 ml-6 text-sm font-bold text-white rounded shadow-sm sm:text-base bg-orange hover:bg-orange-dark">
               Buy Tickets Now
-            </button>
+            </button> */}
             <div className="flex flex-col px-6 py-4 sm:flex-row">
               <span className="w-20 mb-4 mr-2 text-white sm:w-auto prd-tag bg-primary sm:mb-0">
                 $1,250

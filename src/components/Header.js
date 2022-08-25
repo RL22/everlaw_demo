@@ -17,7 +17,7 @@ function Header({ siteTitle }) {
             </span>
           </div>
         </Link>
-        <div
+        {/* <div
           className={`${
             isExpanded ? `hidden` : `hidden`
           } sm:hidden md:hidden lg:block text-lg`}
@@ -58,7 +58,7 @@ function Header({ siteTitle }) {
           >
             <span className="">Contact Us</span>
           </Link>
-        </div>
+        </div> */}
         <div className="block lg:hidden">
           {/* beginning of hamburger */}
           <button
